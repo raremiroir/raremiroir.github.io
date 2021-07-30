@@ -1,0 +1,175 @@
+:root {
+ 	--main-color: rgba(15, 19, 18, 1);
+	--second-color: #E46425;
+	--third-color: #3B4D81;
+	
+	--smalltitle-font: 'Unica One', cursive; 
+	--bigtitle-font: 'Megrim', cursive;
+	--maintitle-font: 'Astloch', cursive;
+	
+	--box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.8);
+}
+
+
+/* Common styles */
+.navbox {
+	line-height: 1;
+	margin: 0 auto 1rem;
+}
+
+.navbox__list {
+	position: relative;
+	display: -webkit-block;
+	display: block;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navbox__item {
+	display: inline-block;
+	margin: 0;
+}
+
+.navbox__link {
+	font-size: 1rem;
+	font-weight: bold;
+	display: block;
+	padding: 1em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.navbox__link:hover,
+.navbox__link:focus {
+	outline: none;
+}
+
+/* Individual styles */
+/* Adrian */
+.navbox--adrian .navbox__item {
+	margin: 0 1em;
+}
+
+.navbox--adrian .navbox__link {
+	position: relative;
+	display: inline;
+	overflow: auto;
+	width: 130px;
+	color: #b5b5b5;
+	padding: 0 1rem;
+	margin: 0 1rem;	
+}
+
+.navbox--adrian .navbox__link a{
+}
+
+.navbox--adrian .navbox__link:hover,
+.navbox--adrian .navbox__link:focus {
+	color: #929292;
+}
+
+.navbox--adrian .navbox__item--current .navbox__link {
+	color: var(--second-color);
+}
+
+.navbox--adrian .navbox__link::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 300%;
+	height: 50px;
+	opacity: 1;
+	background: url(file:///D:/miro_/Documents/%23%23%23MIRO/%23%23%23WORK/%23%23%23MIRO/MiroSite/assets/img/lsm/line.svg) no-repeat top left;
+	-webkit-transform: translate3d(130px, 0, 0);
+	transform: translate3d(130px, 0, 0);
+	-webkit-transition: -webkit-transform 0s 0.3s, opacity 0.3s;
+	transition: transform 0s 0.3s, opacity 0.3s;
+}
+
+.navbox--adrian .navbox__item--current .navbox__link::before {
+	opacity: 1;
+	-webkit-transform: translate3d(-260px, 0, 0);
+	transform: translate3d(-260px, 0, 0);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.navbox--adrian .navbox__helper {
+	display: block;
+	pointer-events: none;
+}
+
+.navbox--adrian .navbox__item--current .navbox__helper {
+	-webkit-animation: anim-adrian 0.3s forwards;
+	animation: anim-adrian 0.3s forwards;
+}
+
+@-webkit-keyframes anim-adrian {
+	50% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	51% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes anim-adrian {
+	50% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	51% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+/* YOUR STYLE (Shakespeare character name) see README.md for details */
+/* (Please copy these two lines and insert after your custom styles) */
+
+
+/* Name (by @you) */
+
+/* [Your styles here]*/
+
+/* End: Name Styles */
+
+
+/* Media queries */
+
+/* Stack items for smaller screens */
+@media screen and (max-width:55em) {
+	.navbox__list {
+		display: block;
+		margin: 0 auto;
+	}
+}

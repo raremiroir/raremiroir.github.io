@@ -1,0 +1,42 @@
+
+@import 'mixins';
+@import 'variable';
+/*====================================
+=            button style            =
+====================================*/
+
+.temp-form-button{
+	background-color: $primary-color;
+	border: 0 !important;
+	@include border-radius(0);
+	position: relative;
+	transform: perspective(1px) translateZ(0px);
+	transition-duration: 0.3s;
+	transition-property: color;
+	box-shadow: 1px 3px 6px #bababa;
+	&:hover{
+		background-color: $primary-color;
+	}
+	&:before{
+		background:$secondary-color;
+		bottom: 0;
+		content: "";
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: scaleY(0);
+		transform-origin: 50% 0 0;
+		transition-duration: 0.3s;
+		transition-property: transform;
+		transition-timing-function: ease-out;
+		z-index: -1;
+	}
+	&:hover{
+		&:before{
+			transform: scaleY(1);
+		}
+	}
+}
+
+/*=====  End of button style  ======*/

@@ -1,0 +1,122 @@
+@media screen and (max-width: 55rem) {
+	
+    .portImg-wrapper {
+        height: 30vh !important;
+    }
+    
+    .filterbox__list {
+		display: flex;
+        margin: 0 auto;
+        width: 95vw;
+	}
+    
+    .link--kumya { 
+        font-size: 1rem; 
+    }
+    .filterbox--adrian .filterbox__item{
+    }
+    
+    .menu__item-link, .marquee span, .pageTitle__item-link, .pageTitle_marquee span {
+        font-size: 3rem;
+    }
+
+    
+    .topnav a{
+        font-size: 1.5rem;
+    }
+    .topnav a:not(:first-child), .dropmenu .dropbtn {
+        display: none; 
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+    .topnav.responsive {
+	    text-align: left; 
+	}
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .dropmenu {float: none;}
+    .topnav.responsive .dropmenu-content {position: relative;}
+    .topnav.responsive .dropmenu .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    .dropmenu .dropbtn{
+        font-size: 1.5rem;
+    }
+    .leftfloater{
+        padding: 0.8rem 0.3rem 0.8rem !important
+    }
+    
+    .portfolio .portfolio-item{
+        margin: 0 auto;
+    }
+    .portfolio-links a{
+        font-size: 2rem;
+    }
+    .portfolio-links .infoBtn-wrap{
+        width: 20vw;
+        padding: 0;
+        display: inline-grid;
+    }
+    
+    .contact .info {
+        padding: 0px;
+        margin: 0px;
+    }
+    .contact .info i {
+        font-size: 2rem;
+    }
+    .contact .php-email-form {
+        padding: 15px 0 0 0;
+    }
+    .total-contact-wrapper{
+        grid-gap: 5vh;
+        grid-template-areas: 
+            "infos infos" 
+            "contactform contactform";
+        margin: 0 auto 5vh;
+    }
+    .contact .contact-wrap{
+        padding: 0;
+    }
+    .contact-info-wrapper{
+        display: grid;
+        grid-gap: 0.1rem;
+        padding: 0;
+        margin: 0 auto;
+        grid-template-areas: "info1 info2 info3 info4";
+    }
+    .contact-info-wrapper .infoBtn-wrap:hover .portInfoBtn {
+        display: none;
+        visibility: hidden;
+    }
+    .contact-info-wrapper .portInfoBtn {
+        display: none;
+    }
+    .contact-form-wrap{
+        margin: 0 auto 5vh;
+    }
+    
+    
+    .input-news{
+        max-width: 50vw;
+        margin: 0 auto;
+    }
+    
+}

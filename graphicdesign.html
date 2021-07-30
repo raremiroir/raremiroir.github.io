@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<!-- main stuff -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Miro Storm - Graphic Design</title>
+	<meta name="description" content="My website, including portfolio and more info about myself about a graphic designer." />
+	<meta name="keywords" content="graphic, design, animation, photography, miro, storm, polfliet, antwerp, illustration, post, cards, posters, portfolio, video, editing, 3d, web" />
+	<meta name="author" content="Miro Storm" />	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/img/favicon.png">	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Megrim&family=Unica+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/zhq0vyf.css">
+<link rel="stylesheet" href="assets/css/font-awesome.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+	
+	
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	<!-- Vendor CSS -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link href="assets/vendor/dmenu/css/menu.css" rel="stylesheet">
+	<link href="assets/vendor/hamburgers/css/hamburgers.min.css" rel="stylesheet">
+	<link href="assets/vendor/mmenu/css/mmenu.min.css" rel="stylesheet">
+	<link href="assets/vendor/filepond/css/filepond.css" rel="stylesheet">
+	<!-- Main CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/sendy.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/mediaqueries.css" />
+	
+<script>
+	document.documentElement.className = "js";
+	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+	supportsCssVars() || alert("Please view this website in a modern browser that supports CSS Variables.");
+	</script>
+</head>
+
+<body>
+	
+	<main role="main" class="main-content" id="main">
+		<div class="loader loader--active">
+  		<div class="loader__icon">
+    		<svg id="loader-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+      			<path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"></path>
+      			<path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0C22.32,8.481,24.301,9.057,26.013,10.047z"></path>
+      			<animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite"></animateTransform>
+    		</svg>
+  		</div>
+  		<div class="loader__tile"></div>
+  		<div class="loader__tile"></div>
+  		<div class="loader__tile"></div>
+  		<div class="loader__tile"></div>
+  		<div class="loader__tile"></div>
+	</div>
+		<canvas id="noise" class="noise"></canvas>
+		<div class="topnav ml-auto" id="myTopnav">
+  				<a href="index.html" class="leftfloater">mirostorm.graphics</a>
+  				<a href="index.html">Home</a>
+  				<a href="about.html">About Me</a>
+  				<div class="dropmenu active">
+    				<button class="dropbtn">Portfolio
+      				<i class="bx bx-down-arrow-alt"></i>
+    				</button>
+    				<div class="dropmenu-content">
+      					<a href="graphicdesign.html" class="active">Graphic Design</a>
+						<a href="photography.html">Photography</a>
+      					<a href="animation.html">3D Animation</a>
+      					<a href="video.html">Video Editing</a>
+      					<a href="webdesign.html">Web Design</a>
+    				</div>
+  				</div>
+  				<a href="contact.html">Contact</a>
+  				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+		
+		
+		<div class="pageTitle animate__animated animate__fadeInRightBig">
+			<a class="pageTitle__item-link"></a>
+			<div class="pageTitle_marquee">
+				<div class="pageTitle_marquee__inner">
+					<span>Graphic Design</span>
+					<span>Graphic Design</span>
+					<span>Graphic Design</span>
+					<span>Graphic Design</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container ">
+  			<div class="row">
+    			<div class="col animate__animated animate__shakeX animate__delay-1s">
+      				<hr style="height: 10px; opacity: 100; width: 80%; margin: 3rem auto; border: none; align-self: center; border: none;">
+    			</div>
+  			</div>
+		</div>
+  
+  <!-- ======= Portfolio Section ======= -->
+	<section id="portfolio" class="portfolio section-bg">
+		<div class="container">
+
+        <div class="section-title">
+          <h2>Graphic Design</h2>
+          <p>Graphic Design has been one of my main hobbies for years, and since 2019 I have been integrating it in my studies as well. Feel free to take a look at the projects I have made. 
+			</p>
+        </div>
+			
+			<!--
+			<section class="section section--filterbox" id="Adrian">
+				<div class="col-lg-12 d-flex justify-content-center filterbox filterbox--adrian">
+					<ul id="portfolio-flters" class="filterbox__list">
+						<li data-filter="*" class="filter-active filterbox__item filterbox__item--current"><a class="filterbox__link"><span class="filterbox__helper">All</span></a></li>
+						<li data-filter=".filter-gd-client" class="filterbox__item"><a class="filterbox__link"><span class="filterbox__helper">Client Projects</span></a></li>
+						<li data-filter=".filter-gd-school" class="filterbox__item"><a class="filterbox__link"><span class="filterbox__helper">School Projects</span></a></li>
+						<li data-filter=".filter-gd-personal" class="filterbox__item"><a class="filterbox__link"><span class="filterbox__helper">Personal Projects</span></a></li>
+					</ul>
+			  	</div>
+			</section> -->
+			
+			
+			<section class="section section--filterbox" id="Adrian">
+				<nav class="filterbox filterbox--adrian">
+					<ul id="portfolio-flters" class="filterbox__list">
+						<li data-filter="*" class="filterbox__item filterbox__item--current"><a href="#" class="filterbox__link"><span class="filterbox__helper">All</span></a></li>
+						<li data-filter=".filter-gd-client" class="filterbox__item"><a href="#" class="filterbox__link"><span class="filterbox__helper">Client Projects</span></a></li>
+						<li data-filter=".filter-gd-school" class="filterbox__item"><a href="#" class="filterbox__link"><span class="filterbox__helper">School Projects</span></a></li>
+						<li data-filter=".filter-gd-personal" class="filterbox__item"><a href="#" class="filterbox__link"><span class="filterbox__helper">Personal Projects</span></a></li>
+					</ul>
+				</nav>
+			</section>
+          
+
+        <div class="row portfolio-container">
+			
+		<div class="col-lg-4 col-md-6 portfolio-item filter-gd-school">
+			<div class="portfolio-wrap">
+            	<img src="https://lh3.googleusercontent.com/fife/AAWUweX8-SUisUu7OKwhAQHKe20M8dsB1lFWKI_Z6vechLrvNSBcP7bNmgbGSzwIataZnuA_9MAV_LOdtKK7dj4wTBVqM8WOqtWb2eC7FDPprJKtfy617xdnq8xZiovATkMc4pmSjqdAWqLrtBCM1qkCQwq6RNwfQEkDf0RvW9jfczMdfwxYve0aib3tXMkNqusKL6tZPZi0__5I34na7FAbrj4rQ1XUlUxUjgXa85Ok9Xt9MmkKw2uu70f_o3PeifEdoJTu0cn9dsb8J8Tcfx3aeluWSdcpvRQsOjPKcMoyogyRrsVsKXvZut9AICbWK8jEwH7e-6hjua8c4Il5NZZ9SyUrXoujJXG2cRdOMObDgEQ6DBpcZ1HIQX6urSakVmcQC7mcBWwEy8Natxn08WB4TjyowGFrdXtPI1uVvOE2JvKMprBRx0Jkim8pFAHB0joglToTKj6tysQtYA031x77d6q16aQ2wzurfpmbHtDl3X19Y7hMjOXb8NcPrkn5tHYXwxUZXvOqT8t8IOl9QwPQkaEpDyi_l9ZHuOv0bNH9UTElkQrGWkIFRZiaoH044wW6UklBp_NI-x46suJrIU2MolbiNKTQ_NgWbfTCppJ-eLsXdmOmkCw9L78KZxply_S3BwVRpVMVoki2DDzMLGWBpca2L9Lh828OGiC2cN5LS4xzyxDB-k_FZA-9WQWB7inTSdQ3ZRheH0di6U-HIlBA0bqyfp42Svn_Mp8=w1436-h939-ft" class="img-fluid" alt="">
+				<div class="portfolio-info">
+					<h4>Flatten The Curve - White</h4>
+					<p>[School Project] Poster</p>
+				</div>
+				<div class="portfolio-links">
+					<a href="assets/img/portfolio/graphicdesign/posters/flatten-the-curve-white.png" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="This is a poster I made for school, about Covid-19. (White version)"><i class="bx bx-expand-alt"></i><p class="portInfoBtn">Enlarge</p></a>
+					<a href="portfolio-graphicdesign-flattenthecurve.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i><p class="portInfoBtn">More Details</p></a>
+				</div>
+            </div>
+		</div>
+<!--
+		<div class="col-lg-4 col-md-6 portfolio-item filter-gd-school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/graphicdesign/posters/flatten-the-curve-black.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Flatten The Curve - Black</h4>
+                <p>[School Project] Poster</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/posters/flatten-the-curve-black.png" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="This is a poster I made for school, about Covid-19. (Black version)"><i class="bx bx-expand-alt"></i></a>
+                <a href="portfolio-graphicdesign-flattenthecurve.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gd-school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/graphicdesign/posters/flatten-the-curve-white-alt.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Flatten The Curve - White Alternative</h4>
+                <p>[School Project] Poster</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/posters/flatten-the-curve-white-alt.png" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="This is a poster I made for school, about Covid-19. (Alternative white version)"><i class="bx bx-expand-alt"></i></a>
+                <a href="portfolio-graphicdesign-flattenthecurve.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i></a>
+              </div>
+            </div>
+          </div>
+-->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gd-school">
+            <div class="portfolio-wrap">
+              <img src="https://lh3.googleusercontent.com/fife/AAWUweVedQN7TwzcnphnqsHdPv7MaQX4pTyN9ds4ya0VbR2b0a8JV8g3kACEss0zUutbrGIKBPoAcbCROXgvPcPsSJkPC00PEbcbtvjXGiHBTAXANiiRwco3zU_ZjI59wRXBM1XHHCex7pmXfNQB50Gc5iRrrFBLmNv4n7-7AgT0MlO3tS7Jg_wlgWTJEJeyLKseGa_Wnw5FJt9CIwEc1tuybTyAFebxOq-pMMNheq5IEtt4ibLXxM3Nvxcty31Yqj3YMtSfR1PrYy9TYDqfvx9i0mU4clGjxC6YDBOT6qZ4GzIkOF4McW6iD7X1AHRsMiM0PZtcvvXCjO9cZrJ8jtg1G00mnRsYbG6PRR_AD8kRpspZssnWmT9iJXJNWPL8yQnUNQaJHcIFUV3kd6B4zkn8dUEsIkoVSy-EnP5dJniJjfu3Zf_cCh4dTbEPS4q3Q5y2Kw6pR6WaVOMVmDfmh1p2y9QCAu82VUpz5tITZ0EUrxuElYk05TK1-Ge3qWm1_gTex1WRR2TqJ3W6XwV5dTYqPhsFyrHwQEPP8uIBVlFjvxXDYlIgBPWJa2gQuwA8syJSWjsJtylXCdS8lBp5dU_aJTJMaLh36t7mh2wuub2AEjoXsAW3Os_3B24WwoD2iBpVKbYLJO31mYWARrVPkDFFChdL4Vn2GIGq6VoZfnDpD1yAaQVjBtje-YjTRIjMa1ER5BVBRoBasfibskEaHqbmMx1-tUqL8nfFPEI=w1436-h939-ft" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Quit Smoking, No Joking</h4>
+                <p>[School Project] Poster</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/posters/quit-smoking-no-joking.png" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="This is a poster I made for school, about sending a message. This one specifically is about quitting smoking."><i class="bx bx-expand-alt"></i><p class="portInfoBtn">Enlarge</p></a>
+                <a href="portfolio-graphicdesign-themessage.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i><p class="portInfoBtn">More Details</p></a>
+              </div>
+            </div>
+          </div>	
+			
+			<div class="col-lg-4 col-md-6 portfolio-item filter-gd-school">
+            <div class="portfolio-wrap">
+              <img src="https://lh3.googleusercontent.com/fife/AAWUweU3OvoqIzQkn2JXlAwnodqij6FkiK3S8NY9cUHngSw1z3R0S2Ghorj-F8pqLNDa70QUVpAcfp58xr-qz6ZzyRKDRw5M0MkVpxvGSR1TV-ydH6DGazzYnHxgaU0Bb5fJLo8k9vRMyN3LLiVYCZGY-X5z_FcHxEmZAeWsDJ5FtmS0Lo3cFYYxrqALS09X3xiFRh1DOXSDfaw8JF4fNHh1wEqLGn1dJ-vTn-iXvbOAyXmZhUYCHiWAioySUehLVGWBeuudSxpidiP9YYqv2gUeurqBwZ8VOXU624my2z-TN0FU9i4gqU67flpK_39mXBBEiffg0gBXrGyl_1k5HzmVAoiD_RVren3WNHeS8ZX1_paXSdx8ifB7ke8Qq5oszQ5zW3MEu5GTYiuq7MZZRnpOxFMvgEjlPNUnU2M9-UsUm5AA99Le0K8UqlW2iCrly9SKMw7ibumArYTCsnn5CqvOkmfV0mpK63uyDZ34_ikTapSygtTD8pitPa8bZrzX9Q9rTlDqGGYUvLq4ZPYrZTVX1yrFLCjs5HCSgBR8i33UPxotO54h8ZbF7qcRj2_P-wAPY2GqsRZvDW3tcYQwfaRlAnZt1sTBh0BYZ87lgbvFxKJOhAopr8AIIzBYmPpSY4FjOmVio7qqIggXocy2a50YTW6Jh2LVRyRymXD5GQpRSCWe90Leo6nARLhPPniK9qrIxC7eedQEwXpM7yZNd-q21WYwk1UeZ33w5Hc=w1436-h939-ft" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Conceptual Knack Cover</h4>
+                <p>[School Project] Cover</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/posters/knack-cover.png" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="This is a magazine cover I made for school, for Knack (Belgian magazine) about the environment and pollution."><i class="bx bx-expand-alt"></i><p class="portInfoBtn">Enlarge</p></a>
+                <a href="portfolio-graphicdesign-worldonfire.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i><p class="portInfoBtn">More Details</p></a>
+              </div>
+            </div>
+          </div>			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item filter-gd-school">
+            <div class="portfolio-wrap">
+              <img src="https://lh3.googleusercontent.com/fife/AAWUweWq1e_OYFZveGVIwhPF0MO1gpwpXxWJPoQ9SC0gbAHwwArrQKekYo72zXKNlcvXBKWnY9QxQTs9YMepLM6uIyu63uowAz8hcfpImgsK8pih_IByzgpDDl3m2Qq_ESx1pkNgzHx-bRVm-1HuRQmB0kwuaLKTAqO3TuKz3gVxrbG0V0xr3YPZ--IFZgD3QgQ-BZyxxVyh36HtAhvKKfMSdfFoXm8ccoVYKmllLEHL7ZdBvKTwgNI9wTFOp0x_oGjGQJkcP7Mi11XjUwvH5rUG1mPrPrc5oVr2WrBH8fxQAvfsafb0VMJKPqnqVgtLnS0IWUBQ24HlAy-vqYT2EIGahJglZauwBprv4ZrwA0Luwgc93Jdpx94OFEky83oMjLXdDKTSVnCdCAvDeNpS7iCc4l_UFHMXQghKYJK87WjbhgX-yKsb9_OojgLwtFXEB6zh12ReJPz_d1qSEkFS7wv92bfGSHGlHDDJt0lydsA38w36n_ITdJZxYMMkoJknB1rxtZh3K2ANIM-GUh1TJe9i-MLYy1nFaA5eysqyzDFtik5y6fhfo0uSO-OGS_NGTBQuWyUYJ1pcEQMw4dm8X2GYzatn9ecnIZqjlTgrd6VfK7EnlLXDQi5UnYWCeAiNPwWOfZOV5ap5x0MK8mWNeQRq0yBbLP2CpuZPbcTMi4vQwa-s9qA-pSyjy8CwekWT3oDBP5uFZ_iF1qCpgV5B4m3pBiO1dGSbzENffvc=w1436-h939-ft" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Conceptual Book Cover</h4>
+                <p>[School Project] Book Cover</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/posters/a-satan-called-santa.png" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="This is a book cover I made for school, about a fictional book of which the title is partly an anagram."><i class="bx bx-expand-alt"></i><p class="portInfoBtn">Enlarge</p></a>
+                <a href="portfolio-graphicdesign-bookshow.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i><p class="portInfoBtn">More Details</p></a>
+              </div>
+            </div>
+          </div>			
+<!--
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gd-personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/graphicdesign/illustrations/cedje.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Portrait of a Mate</h4>
+                <p>[Personal Project] Illustration</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/illustrations/cedje.png" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="I made three illustrations in a specififc line-style I developed myself. This is the first one."><i class="bx bx-expand-alt"></i></a>
+                <a href="portfolio-graphicdesign-illustrations-cartoons.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i></a>
+              </div>
+            </div>
+          </div> 
+-->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gd-personal">
+            <div class="portfolio-wrap">
+              <img src="https://lh3.googleusercontent.com/fife/AAWUweVE6wPZBIlhgj2ZT6iQEbcdeR0XKnIrETtfBDK8-dgnmFb56s49eoxIxdfCc8Rw1uShwxMZBj6xfMUoBtb0CEcS4sRFdUePZ5ZBrbtYr5d_rLniILyV4Q2xI4x9EDIGlVcmWbqFNFfOYN9cHtRsieG7XhyC1b_XoKqggyJP94z2l2iLw5LxoyZacnxcAfiF143c7M0sTzkLFucYiJG31zM3Iui_a0xgnXLUKY_UWO4BGntsgxl4S_wKi5xQyyHio-enxr5f7aEai_BGxUxDgjxmtPyvTeIA8ibK13_mJ3d-38Lx1XN69leH5MWiIS0qJ0MtHyqS3B7DfBTc2WKU720BhCPVy_Axsuhd3pCYNVPl0fv8nmmTyIBbyWl4BEGXgS_pv-v0vFwX5tV9iEwzOuymoLPzqWFAj3jy5aSmCmBBYW2Cd_j5RerJAsRez4ZNBnONgNYX4OFawSM39fE2MAT4UuRQLMdHGNI9fqThYgpTa2-3sepXdbsk056LCx5C3-SgsLNTtPbncQVs8qd-1WFQArNhMHEDvifad2mk2n-0-SHFxy0ZY-mfLSbS6iIoUpiKwBAyEcxYTVEIoFJqJWi61-GD3plK49SvBvck5IZvjYp7wp8eQCoKtAvgUHvA86BaY7H5N2BXQjsp-irk0a9CtRMov1f_URBMtEj5ykj_czbGQ6hFIyXQLXNJLxhC3xFvTdj3GfFj3FYKn-4l4uIImp_4KQO-Qes=w1436-h939-ft" class="img-fluid" alt="">
+              <img src="https://lh3.googleusercontent.com/fife/AAWUweU0dmtoIz_0fInRTI7b7O5fyETBiVa6VymnD1JZC1lxTPOhlfvjwLqyr5cfxiQAjiCA5aeV8ngPlTvC8wT7YFIx_vJTiUPgO8OLqvK_QKERRiC2xA82AS9Zz3hjbhYO327VfFYyZvlakTcuQ0bVW_ht3H5PLQNweWmxGQp4y6bC7PgBZT1aYeuz-dFGszWOkLJz41dp7Ccw8ku0kLuNf31zTzxKPXxjpWPvgAMwQTwtkzGlca_Nice6ofxqMJ1LJCqFALF4ozT-bpkYf-ya3pXBtjy6zUsKBLIDVG7iUl9E_1hj2CWwwe7x_QMZsh6dq8AGjkMU_geDepFnODEIsxuYdSEuFxkYDUFBM27tu0NZhmYsvfT1h_ngf0Bo93eAlbPPYcLMRfzODFeLTww3RSoava2OI77GuXN_9Y4UsbE0mmP6ZML7Lgty6CIpZsEDlTX8F53ASLRS-Z12-ZYVLWDuAPAf8loBUSHLYDl9rLF86lH9t6MRimaHobHLwErId3Xa8gt9QdKJp7W6iT1WAFhGSI1Fi62S0uRCS56WZ6oLIr3C1CRNhwiPyYocACl4A391-PB5wJbli-6uP2tS_K4_A2VXfkyGGt3dsiRX5D_L-XL_j55i8isYK6YVhObfMvZO40u0PXeQmNKXQa159OTM8Lkm6qhs7MnJZlW3mrGdOhQSmEOVBBLGxXZ4MS4A2hIZyLyzAgz48FWtxoVKqSH1yMc3z5c0Yd4=w1879-h939-ft" class="img-fluid" alt="">
+              <img src="https://lh3.googleusercontent.com/fife/AAWUweXr1SRIcbrVLmKNJeymlcVmohXJWCvDJe377hB7MXAJNcq_rN7XZmYfFEnv0aH-c6QrY5GXTGD7AY2sE3Lol_n2F90fYUxCqetjm_MiIveoNdbdf_s-3IxdABAh_IA66nnjwrbrZhWlgC1aut_JA1UPee94WC6qXKVGt2vLflD0dlPoTxhCz3wtcE2G8ieDgasRk3Jjw0W7h64jMY6_JwnpAUiwO9lyXZ9R7rPEF3HhpyFfpr_ldCJvOaEcdioofSETEFF2RHoODCM7pFpc9m1mkiFQEASdIBb4erukvsboX2_4DG1E1T6eZPxnrwM7KjBaApk-2vrNO_iMZ2pLEDxni0vCqY_y15vkrGJlWft4HzFj-JpnbXjfq_jZ5nl-0ygcLqWKse4RlJ1MfYsGVkPGJASjQ8tdshnsDiVgIRcQu8M6GUINFXWjpw028_jN6Rlb1edu2Chwu9PVV8UH47AYpbOjcNXodXGJVdkN7FRHiTR6nfbaqQEqg5wSkx5NqAPAI8GV0GhyNLR_Ej0_eWw-qk1QVhNnuqkwo984MuJmBAgXvJk9z-15VMIU2J3Y3wrRHrPwe2U7cDXLneTNPGSXCumXMGB6CG3MS38d1dyI2qJvuh9QV_JFuSnNbXP5lYrrGAc_ANwBVaDM-j4fs4SJCMYCf6qmMDkfxufKHYLPXKZHbX_d-qaPHiGrNFb_2gAD4L9MnFiNYR7dnejz4Jh-uvJMT1klssI=w1436-h939-ft" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Portrait of a Friend</h4>
+                <p>[Personal Project] Illustration</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/illustrations/zebi.png" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="I made three illustrations in a specififc line-style I developed myself. This is the second one."><i class="bx bx-expand-alt"></i><p class="portInfoBtn">Enlarge</p></a>
+                <a href="portfolio-graphicdesign-illustrations-cartoons.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i><p class="portInfoBtn">More Details</p></a>
+              </div>
+            </div>
+          </div>
+<!--
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gd-personal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/graphicdesign/illustrations/miro.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Portrait of Myself</h4>
+                <p>[Personal Project] Illustration</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/illustrations/miro.png" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="I made three illustrations in a specififc line-style I developed myself. This is the third one."><i class="bx bx-expand-alt"></i></a>
+                <a href="portfolio-graphicdesign-illustrations-cartoons.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i></a>
+              </div>
+            </div>
+          </div>
+-->	
+		<div class="col-lg-4 col-md-6 portfolio-item filter-gd-school">
+            <div class="portfolio-wrap">
+              <img src="https://lh3.googleusercontent.com/fife/AAWUweXdjKFXYYeWF0CYc9wgtUG-vs8OMXiTWRL919RTcBEFQ1jYffKqrvphf_0E-e3l5WqD5KaOL_o41j36xMAxxDuXzqTIJuSZ51AkX2OTiKPgsUbJYy-jhLY3j2pyK99SX12IVVUp9JNlwskum1pfdhmGSOFdWCU8l4revBaR66CTWqRvsqmVUz-CXxugsw7gMiL6y-RbmBPnFt3KYtWzQqFEVMpSiYXi4BF78avIuhsLhgCD3lIwmPerKHxeXyqI1pf0dCWqZ9bR06uEQmC8tHbW238tyDt0TyL_UzvGUkHUwyXkMqY5MrNNeTKYXA4DC0r_Nku1nPOSRQAd7a5frnYpsCPxMlny5SXvAxSIcmaE5Ba63e5UC6s7geQEyvV_eZrJ58g5VZ37a3OVeR5HZMDbqmOmz6fbwGf4GHdEpkoRJFrsWdI7CHlRfSfzp-Fn1EayxKHCNdZWk0W2N1HDQoN24KWxuMCjuBE7gQeXjFwJxR1QgmVcjbPZe7NPOYMtbM8TUKOMV08zvxESFbA2paZVmf5fYJxD4cKGbz_xYh-bJdzI63Edem30D71aQHySckP3g1P2hpOPV0CYBWbjEg8mii2S78JCzlKD0tsHC4r-1-aM9Ui18eMThSflukx87e5EWug7oUsIqektGX_QD-WjB2M1Qymu9YIaE-DJZm2-OuCU4_xJddW6CB5ALhEue79MWg64xgb6zeXXdSAJrii0-o8MGH0mRYA=w1436-h939-ft" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Conceptual Business Card - Front</h4>
+                <p>[School Project] Business Card</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/businessprints/businesscard-1-back.png" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="This is the front side of a conceptual business card I made for school. The name on the card was someone in my class."><i class="bx bx-expand-alt"></i><p class="portInfoBtn">Enlarge</p></a>
+                <a href="portfolio-graphicdesign-businesscard.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i><p class="portInfoBtn">More Details</p></a>
+              </div>
+            </div>
+          </div>
+<!--
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gd-school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/graphicdesign/businessprints/businesscard-1-back.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Conceptual Business Card - Back</h4>
+                <p>[School Project] Business Card</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/businessprints/businesscard-1-back.png" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="This is the back side of a conceptual business card I made for school. The name on the card was someone in my class."><i class="bx bx-expand-alt"></i></a>
+                <a href="portfolio-graphicdesign-businesscard.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i></a>
+              </div>
+            </div>
+          </div>
+-->	
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gd-school">
+            <div class="portfolio-wrap">
+              <img src="https://lh3.googleusercontent.com/fife/AAWUweVZZLGwBET0CnG3IpLZgRr7cmMXZxAzJT3kff71HkYdkbwaMX1JYdWlPnH-h_IieUpLKPYV89S-ajXCz9B6gp_EL27j0SeCR9w6Sl_D1ltRcIPHaTqeCXbXF_8DN0Dl_QvXL_ifJCu9FvQJr4sG-b-Oajd4MjXwIJvHQuJCfiDswloiFE79CfDlDbbQi9MNMwQmeLCHPo4ufzETAQbmthXoIZEsn3rO4Fe5nCc6WJYGh_zvvZmMjZ0PLEL4sLFzx-dVYmRU0R_yBMHUw4Iww_EwBYtjhdwUnfp5aIvZXuPu7WrWJ6CMnRLa4IYLuYGpZPXgDWmjsWvopwOAGSaBXmJodqYU-NywDHyZjxj1x9Y0WFMmGCHjAaVVu2nH2WPFfaACr3oJb3gORIhlc8H1akoBP1xWzdwXKmTwo_EBaxSe3x_lFPVL1U7HHpfkibwWlv5qxuTywA4lpHmF0fz2KpOGG18u2iNEQo8TTua8rJa6iwCo0HLraWCpP7vTNp5PHUKjwJOAj_ajyTzqHnzcM7S0jKvoGojte_IS_Dj8AhClEXWa6RUHOb-nj7RB7t_3iE-ewX2mJXHrmM_h_AhY3ErTUqtT14qC3ttQCLColaHFJ027lyELYfU3RGqo65LI9dW7D8VdKuQo4T38zy8Pask3LXH6428kWhdHLd51K28G89jrNTEJEsTEdiiCY-iA79zsWwI26AktWJuP0hinMTDRrq5v1O-nl7w=w1436-h939-ft" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Infographic on Overpopulation</h4>
+                <p>[School Project] Infographic</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/others/infographic-overpopulation.png" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="This is an infographic about overpopulation, made for school."><i class="bx bx-expand-alt"></i><p class="portInfoBtn">Enlarge</p></a>
+                <a href="portfolio-graphicdesign-infographic-overpopulation.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i><p class="portInfoBtn">More Details</p></a>
+              </div>
+            </div>
+          </div>
+<!--
+		<div class="col-lg-4 col-md-6 portfolio-item filter-gd-school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/graphicdesign/posters/scaling-course-white.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Scaling Course - White</h4>
+                <p>[School Project] Tear-Off Poster</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/posters/scaling-course-white.png" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="This is a tear-off-poster I made for school. It's looking for people who want to enroll in a 'scaling course', which is, of course, conceptual. It focuses more on the typographic aspect. (White version)"><i class="bx bx-expand-alt"></i></a>
+                <a href="portfolio-graphicdesign-tearmeoff.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i></a>
+              </div>
+            </div>
+        </div>
+-->	
+		<div class="col-lg-4 col-md-6 portfolio-item filter-gd-school">
+            <div class="portfolio-wrap">
+              <img src="https://lh3.googleusercontent.com/fife/AAWUweX5IjROUzi2Lf-vIPbfW9kKXBbFCjt157t5eVk-oLW7VMdb9gDv2pbYkVvBi1gsrlnkSNxhlkIH5S2pM0gBVDUEHUi_8tPDyBaTvT9iyqt-YJWofLQ36JBsBxQBnLuRa6vqukcXqRWJ-5PuMBLENf_FAaoqK-Qidb9yDROWtnCv6UpqBo3Ve8J-qe2qAgysrvp846cP8xqEQPl1-T_6ruLqxS6E2Jzo849xo_k7tQ3NqrSMyA2ZlRTIw7sgfWr3BAjsIOEuKJKr7LLUSJO_0n-VN0ezIVbb6IVEZZWLuVWhDocCha5aZ-Dak5Ps6qvIo4-zisapA6QkbClE1ImPHnpRPHjsIky0xebcxFoCzSa9h9uBO3ERfztQ-esWl9aBqKHAXyA9LpZFDIQWa_fZXTKg9QI8WEwPTry891lieg-SMMzCX6iLrWg2XjUp3QuKF7Ss69PMMbvX0xOKgM53GvcoNUtn_3woGXg5-0nL4ry7TOSj275mpD-Fj-cvdNfcHCIt0n550G7_XapPD94RjQQHP01kYtF5CWylHCQubkqIk5BwYEZQOtvLNKui-Gm4gcvhF2TBK46Up8VyjfQOD4SF_XQFDuePmy34cgWpvWyyswf47zKXrOs3jjiQJ96QcY5GsO-FAgM_MaCxxVc78YvW8MLesY5p5d_4ocL8Aye4gbVun5Fz6dWnqQbT4kszIipCItu_1hwabhws2xZAVjAH4B-KDwmtBQI=w1436-h939-ft" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Scaling Course - Black</h4>
+                <p>[School Project] Tear-Off Poster</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/posters/scaling-course-black.png" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="This is a tear-off-poster I made for school. It's looking for people who want to enroll in a 'scaling course', which is, of course, conceptual. It focuses more on the typographic aspect. (Black version)"><i class="bx bx-expand-alt"></i><p class="portInfoBtn">Enlarge</p></a>
+                <a href="portfolio-graphicdesign-tearmeoff.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i><p class="portInfoBtn">More Details</p></a>
+              </div>
+            </div>
+        </div>
+<!--	
+		<div class="col-lg-4 col-md-6 portfolio-item filter-gd-school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/graphicdesign/typography/typo-takeaway-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Italics Pizzeria</h4>
+                <p>[School Project] Restaurant Menu - Typography Style</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/typography/typo-takeaway-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="This is a typographic work I made for school. It is a menu card of a conceptual restaurant which focuses on serving typographic elements. In my case, I chose a pizzeria which focuses on italics (slanted text), simply because italics sounds a lot like Italy. The menu card is slanted, as is the text and the overall layout of the card."><i class="bx bx-expand-alt"></i></a>
+                <a href="portfolio-graphicdesign-typotakeaway.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i></a>
+              </div>
+            </div>
+        </div>
+-->
+			<div class="col-lg-4 col-md-6 portfolio-item filter-gd-school">
+            <div class="portfolio-wrap">
+              <img src="https://lh3.googleusercontent.com/fife/AAWUweV6NBiZZbdLMq-sZvG0RukS5qb8NhKzv6kX7ob8RBd5lRON5IZnpfLPIQHvOD8E4ILHua5F8rgflSUJ1awrA5OFU7LucXDNvywxRbHWEJzpIM0R3mLe-uX9ZxL00-yEMtHpMN-Ny-8SLKV8I0SVqxrRkGfY5WvyyMgFRUYHdQTznHOTOZeaKWjsyO4lBaFdWWL93uDDAayYtb5EiVpmSDDv_ropSRR8O-ScoJaOv4NxJD38TZgF46BNyL9QBKoAR_prXJMAM9hbFCayn74EL1ncChiSMbbCCMf7ElZRBCNcNJ92JQ_dDzr0LrTZVT3yhFsg_HwRRyxR6Mxk-cjeytu2YXOIjZD11czBqVE3LrbXRuO6QsETjFypUff9w2J7YICz1y6uMNUC0Fc_3X7L8LQA8KRyaiLgTH_la5MgVnSsawT_dNpEDDi-KNrxlV0wH7pdtLt7_AEGb2h2NEJbJakL4ARdZPlzMpnOPDzcUKkKw3cT6ZPEBDdKWrnV9G39qkgfZThbjZp7lGFZ1QykyWOOg8OE0YfjY-nTTDGWnHtbV8BVwxPHlgkB8-YQVop_uqB6iHBkH6GPLlFlpHJPXeY-v_HzmKEWmQCclNpoAgHOsOpcYxc51-mwxPM9h4u71TH56bBgr8WSGEqWjPr9CNu1LkrA5uIhCcEXkYmTxB2Ns3HMKZ9KGnhuH3Prn5uKZrjdRu-eoAl9xSzSKTqLHg6MnCCsk6nrRlg=w1436-h939-ft" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Italics Pizzeria</h4>
+                <p>[School Project] Restaurant Menu - Typography Style</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/typography/typo-takeaway-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="This is a typographic work I made for school. It is a menu card of a conceptual restaurant which focuses on serving typographic elements. In my case, I chose a pizzeria which focuses on italics (slanted text), simply because italics sounds a lot like Italy. The menu card is slanted, as is the text and the overall layout of the card."><i class="bx bx-expand-alt"></i><p class="portInfoBtn">Enlarge</p></a>
+                <a href="portfolio-graphicdesign-typotakeaway.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i><p class="portInfoBtn">More Details</p></a>
+              </div>
+            </div>
+        </div>
+<!--
+		<div class="col-lg-4 col-md-6 portfolio-item filter-gd-school">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/graphicdesign/typography/typo-takeaway-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Italics Pizzeria</h4>
+                <p>[School Project] Restaurant Menu - Typography Style</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/graphicdesign/typography/typo-takeaway-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox infoBtn-wrap" title="This is a typographic work I made for school. It is a menu card of a conceptual restaurant which focuses on serving typographic elements. In my case, I chose a pizzeria which focuses on italics (slanted text), simply because italics sounds a lot like Italy. The menu card is slanted, as is the text and the overall layout of the card."><i class="bx bx-expand-alt"></i></a>
+                <a href="portfolio-graphicdesign-typotakeaway.html" title="More Details" class="infoBtn-wrap"><i class="bx bx-comment-detail"></i></a>
+              </div>
+            </div>
+        </div>
+-->
+			
+			
+			
+
+          
+
+        </div>
+	</section>
+
+  <!-- End Our Portfolio Section -->		<!-- ======= Contact Us Section ======= -->
+		
+			<div class="container ">
+  			<div class="row">
+    			<div class="col animate__animated animate__shakeX animate__delay-1s">
+      				<hr style="height: 10px; opacity: 100; width: 80%; margin: 0 auto 3rem; border: none; align-self: center; color: #E46425;"> 
+    			</div>
+  			</div>
+		</div>
+		
+	<section id="contact" class="contact section-bg">
+		<div class="total-contact-wrapper">
+				<div class="infos contact-info-wrapper contact-wrap">
+							<div class="info info-1">
+								<a href="" target="_blank" class="infoBtn-wrap">
+									<i class="bx bxl-instagram-alt bx-lg"></i>									
+									<div class="portInfoBtn">
+										<h4>Instagram</h4>
+										<p>Check out my Instagram!</p>
+									</div>
+								</a>
+								
+							</div>
+							<div class="info info-2"> 
+								<a href="" target="_blank" class="infoBtn-wrap">
+									<i class="bx bxl-pinterest bx-lg"></i>									
+									<div class="portInfoBtn">
+										<h4>Pinterest</h4>
+										<p>Check out my pins on Pinterest!</p>
+									</div>
+								</a>
+								
+							</div>			
+							<div class="info info-3"> 
+								<a href="" target="_blank" class="infoBtn-wrap">
+									<i class="bx bxl-youtube bx-lg"></i>									
+									<div class="portInfoBtn">
+										<h4>YouTube</h4>
+										<p>Check out my YouTube channel!</p>
+									</div>
+								</a>
+								
+							</div>
+
+
+							<div class="info info-4"> 
+								<a href="mailto:miro@mirostorm.graphics" class="infoBtn-wrap" target="_blank" rel="noopener noreferrer">
+									<i class="bx bxs-envelope bx-lg"></i>
+									<div class="portInfoBtn">
+										<h4>MAIL</h4>
+										<p>miro@mirostorm.graphics</p>
+									</div>
+								</a>
+							</div>
+			</div>			<div class="contact">
+				<div class="container contact-form-wrap contact-wrap">
+					<!-- Form -->
+					<form method="POST" id="contactForm" name="contactForm" action="assets/php/send_phpmailer_file_attachment.php">
+						<div class="row">
+							<div id="mainContent">
+								
+								<div class="row section-title intro-wrap">
+									<h2>Contact Me</h2>
+									<p>
+										For any inquiry, or info about my work, I highly encourage you to contact me through this form. Otherwise, you could also mail me yourself, or even call me in between my working hours.
+									</p>
+								</div>
+								
+								<!-- Personal Details -->
+								<div class="row box first">
+									
+									<div class="col-md-12 col-sm-12">
+										<div class="input input-first input-name input--jiro form-group">
+											<input id="username" class="input__field input__field--jiro form-control" name="username" type="text" placeholder="e.g.: John Doe" data-parsley-pattern="^[a-zA-Z\s.]+$" required />
+											<label class="input__label input__label--jiro">
+												<span class="input__label-content input__label-content--jiro">Your Full Name</span>
+											</label>
+										</div>
+									</div>
+									
+									<div class="col-md-12 col-sm-12">
+										<div class="input input-first input-email input--jiro form-group">
+											<input id="email" class="input__field input__field--jiro form-control" name="email" placeholder="e.g.: john.doe@mail.com" type="email" required />
+											<label class="input__label input__label--jiro">								
+								   				<span class="input__label-content input__label-content--jiro">Your E-mail</span>
+											</label>
+										</div>
+									</div>
+									
+									
+									<div class="col-md-12 col-sm-12">
+										<div class="input input-first input-email input--jiro form-group">
+											<input id="phone" class="input__field input__field--jiro form-control" name="phone" placeholder="e.g.: +32401234567" type="text" data-parsley-pattern="^\+{1}[0-9]+$" />
+											<label class="input__label input__label--jiro">
+												<span class="input__label-content input__label-content--jiro">Your Phone Number</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- Personal Details End -->
+								<!-- Subject -->
+								<div class="col-md-12 col-sm-12">
+										<div class="input input--jiro form-group">
+											<input id="hidden" class="input__field input__field--jiro form-control" name="subject" placeholder="enter subject" type="text" required />
+											<label class="input__label input__label--jiro">
+												<span class="input__label-content input__label-content--jiro">Subject</span>
+											</label>
+										</div>
+									</div>
+								<!-- Subject End -->
+								
+								<!-- Message -->
+									<div class="col-md-12">
+										<div class="input input--jiro form-group">
+											<textarea id="inputMessage" class="input__field input__field--jiro form-control" name="message" placeholder="enter message" rows="8" data-parsley-pattern="^[a-zA-Z0-9\s.:,!?']+$"
+												required></textarea>
+											<label class="input__label input__label--jiro">
+												<span class="input__label-content input__label-content--jiro">Message</span>
+											</label>
+										</div>
+									</div>
+								<!-- Message End -->
+								<!-- File Uploader -->
+									<div class="col-md-12">
+										<div class="input input--jiro form-group">
+											<input type="file" name="filepond[]" />
+										</div>
+									</div>
+								<!-- File Uploader End -->
+								<!-- Terms -->
+									<div class="col-md-12">
+										<div class="input input--jiro form-group">
+											<input type="checkbox" id="cbx" class="inp-cbx" name="terms" value="yes" required />
+											<label class="cbx terms" for="cbx">
+												<span>
+													<svg width="12px" height="10px" viewbox="0 0 12 10">
+														<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+													</svg>
+												</span>
+												<span>Accept<a href="pdf/terms.pdf" class="terms-link" target="_blank">Terms and Conditions</a>.</span>
+											</label>
+										</div>
+									</div>
+								<!-- Terms End -->
+								<!-- Submit-->
+									<div class="col-12">
+										<div class="input input--jiro form-group">
+											<button type="submit" name="submit" class="btn-form-func">
+												<span class="btn-form-func-content">Submit</span>
+												<span class="icon submit-icon"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+											</button>
+										</div>
+									</div>
+								<!-- Submit -->
+							</div>
+						</div>
+					</form>
+					<!-- Form End -->
+				</div>
+			</div>
+            
+            
+	</div>
+	</section>
+	<!-- End Contact Us Section --> 
+  
+		
+	  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Miro Storm</h3>
+            <p>
+              	<span style="color: #fff">
+					2000 Antwerp, <br>
+              		Belgium <br><br>
+				</span>
+              <strong>Phone:</strong> <span style="color: #fff">+32 484 343 091</span><br>
+              <strong>Email:</strong> <span style="color: #fff">miro@mirostorm.graphics</span><br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="home.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About Me</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="home.html" class="active-footer">Portfolio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="terms-of-service.html">Terms of Service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Portfolio</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="graphicdesign.html" class="active-footer">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="photography.html">Photography</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="animation.html">3D Animation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="video.html">Video Editing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="webdesign.html">Web Design</a></li>
+            </ul>
+          </div>          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>My Newsletter (WORK IN PROGRESS)</h4>
+            <p>Subscribe to my newsletter to receive monthly updates about my work!</p>
+            <form action="" method="post">
+              	<span class="input input-news input--jiro">
+					<input class="input__field input__field--jiro" name="email" type="email" id="input-15 email" required/>
+					<label class="input__label input__label--jiro" for="input-15 email">
+						<span class="input__label-content input__label-content--jiro">Your E-mail</span>
+					</label>
+				</span>
+				<button class="link link--kumya" type="submit" style="font-weight: 600"><span data-letters="Subscribe">Subscribe</span></button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+	  <div class="row ultimate-footer">
+	  	<p>© Made by Miro Storm. All rights reserved.</p>
+	  </div>
+  </footer><!-- End Footer -->
+		
+</main>
+<!-- End #main --> 
+		
+
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> 
+
+<!-- Vendor JS Files --> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script> 
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> 
+<script src="assets/vendor/php-email-form/validate.js"></script> 
+<script src="assets/vendor/purecounter/purecounter.js"></script> 
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script> 
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script> 
+
+<!-- Main JS File --> 
+<script src="assets/js/main.js"></script>
+<script  src="assets/js/pagetrans.js"></script>
+		
+		
+<script src="assets/js/classie.js"></script>
+<script src="assets/js/clipboard.min.js"></script>
+<script>
+	(function() {
+		[].slice.call(document.querySelectorAll('.filterbox')).forEach(function(filterbox) {
+			var filterboxItems = filterbox.querySelectorAll('.filterbox__link'),
+				setCurrent = function(ev) {
+					ev.preventDefault();
+
+					var item = ev.target.parentNode; // li
+
+						// return if already current
+					if (classie.has(item, 'filterbox__item--current')) {
+							return false;
+					}
+						// remove current
+					classie.remove(filterbox.querySelector('.filterbox__item--current'), 'filterbox__item--current');
+						// set current
+					classie.add(item, 'filterbox__item--current');
+				};
+
+				[].slice.call(filterboxItems).forEach(function(el) {
+					el.addEventListener('click', setCurrent);
+				});
+			});
+
+			[].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
+				link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+				new Clipboard(link);
+				link.addEventListener('click', function() {
+					classie.add(link, 'link-copy--animate');
+					setTimeout(function() {
+						classie.remove(link, 'link-copy--animate');
+					}, 300);
+				});
+			});
+		})(window);
+</script>
+	
+	<!-- noise script -->
+<script>
+	const noise = () => {
+    let canvas, ctx;
+
+    let wWidth, wHeight;
+
+    let noiseData = [];
+    let frame = 0;
+
+    let loopTimeout;
+
+
+    // Create Noise
+    const createNoise = () => {
+        const idata = ctx.createImageData(wWidth, wHeight);
+        const buffer32 = new Uint32Array(idata.data.buffer);
+        const len = buffer32.length;
+
+        for (let i = 0; i < len; i++) {
+            if (Math.random() < 0.5) {
+                buffer32[i] = 0xff000000;
+            }
+        }
+
+        noiseData.push(idata);
+    };
+
+
+    // Play Noise
+    const paintNoise = () => {
+        if (frame === 9) {
+            frame = 0;
+        } else {
+            frame++;
+        }
+
+        ctx.putImageData(noiseData[frame], 0, 0);
+    };
+
+
+    // Loop
+    const loop = () => {
+        paintNoise(frame);
+
+        loopTimeout = window.setTimeout(() => {
+            window.requestAnimationFrame(loop);
+        }, (1000 / 25));
+    };
+
+
+    // Setup
+    const setup = () => {
+        wWidth = window.innerWidth;
+        wHeight = window.innerHeight;
+
+        canvas.width = wWidth;
+        canvas.height = wHeight;
+
+        for (let i = 0; i < 10; i++) {
+            createNoise();
+        }
+
+        loop();
+    };
+
+
+    // Reset
+    let resizeThrottle;
+    const reset = () => {
+        window.addEventListener('resize', () => {
+            window.clearTimeout(resizeThrottle);
+
+            resizeThrottle = window.setTimeout(() => {
+                window.clearTimeout(loopTimeout);
+                setup();
+            }, 200);
+        }, false);
+    };
+
+
+    // Init
+    const init = (() => {
+        canvas = document.getElementById('noise');
+        ctx = canvas.getContext('2d');
+
+        setup();
+    })();
+};
+
+noise();
+	
+</script> <!-- end noise script -->
+	
+<!-- dropdown responsive script -->
+<script>
+	function myFunction() {
+  		var x = document.getElementById("myTopnav");
+  		if (x.className === "topnav") {
+			x.className += " responsive";
+  		} else {
+    		x.className = "topnav";
+  		}
+	}
+</script>
+<script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+	</script>
+	<script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'textarea.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
+		<script>
+		window.requestAnimFrame = (function(callback) {
+			return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+				function(callback) {
+					window.setTimeout(callback, 1000 / 60);
+				};
+		})();
+
+		var requestId, jolttime;
+
+		var c = document.getElementById('canv');
+		var $ = c.getContext('2d');
+
+		var s = 18; //grid square size
+		var mv = 10; //moving areas
+		var sp = 1; //move speed
+		var clm = 23; //columns
+		var rw = 10; //rows
+		var x = []; //x array
+		var y = []; //y array
+		var X = []; //starting X array
+		var Y = []; //starting Y array
+
+		c.width  = c.offsetWidth;
+		c.height = c.offsetHeight;
+
+		for (var i = 0; i < clm * rw; i++) {
+			x[i] = ((i % clm) - 0.5) * s;
+			y[i] = (Math.floor(i / clm) - 0.5) * s;
+			X[i] = x[i];
+			Y[i] = y[i];
+		}
+		var t = 0;
+
+		function jolt() {
+			$.fillRect(0, 0, c.width, c.height);
+
+			for (var i = 0; i < clm * rw; i++) {
+				if (i % clm != clm - 1 && i < clm * (rw - 1) - 1) {
+					$.fillStyle = "hsla(0,0,0,1)";
+					$.strokeStyle = "#95D384";
+					$.lineWidth = 1;
+					$.beginPath();
+					$.moveTo(x[i], y[i]);
+					$.lineTo(x[i + 1], y[i + 1]);
+					$.lineTo(x[i + clm + 1], y[i + clm + 1]);
+					$.lineTo(x[i + clm], y[i + clm]);
+					$.closePath();
+					$.stroke();
+					$.fill();
+				}
+			}
+			for (var i = 0; i < rw * clm; i++) {
+				if ((x[i] < X[i] + mv) && (x[i] > X[i] - mv) && (y[i] < Y[i] + mv) && (y[i] > Y[i] - mv)) {
+					x[i] = x[i] + Math.floor(Math.random() * (sp * 2 + 1)) - sp;
+					y[i] = y[i] + Math.floor(Math.random() * (sp * 2 + 1)) - sp;
+				} else if (x[i] >= X[i] + mv) {
+					x[i] = x[i] - sp;
+				} else if (x[i] <= X[i] - mv) {
+					x[i] = x[i] + sp;
+				} else if (y[i] >= Y[i] + mv) {
+					y[i] = y[i] - sp;
+				} else if (y[i] <= Y[i] + mv) {
+					y[i] = y[i] + sp;
+				}
+			}
+			//controls time of electric shake> when counter equals 0, it will reset for 5s then start again.
+			if (t % c.width == 0) {
+				jolttime = setTimeout('jolt()', 5);
+				t++;
+			} else {
+				jolttime = setTimeout('jolt()', 5);
+				t++;
+			}
+		}
+
+		function start() {
+			if (!requestId) {
+				requestId = window.requestAnimFrame(jolt);
+			}
+		}
+
+		function stop() {
+			if (requestId) {
+				clearTimeout(jolttime);
+				window.cancelAnimationFrame(requestId);
+				requestId = undefined;
+			}
+		}
+
+		document.querySelector('a.link--asiri').addEventListener('mouseenter', start);
+		document.querySelector('a.link--asiri').addEventListener('mouseleave', stop);
+	</script>
+</body>
+</html>

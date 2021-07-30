@@ -1,0 +1,23 @@
+@import 'mixins';
+@import 'variable';
+/*====================================
+=            common style            =
+====================================*/
+body{
+	font-family: $font-stack1;
+}
+a{
+	outline: 0 !important;
+	&:hover{
+		text-decoration: none !important;
+	}
+}
+ul{
+	list-style: none;
+}
+.custom-row{
+	display: flex;
+}
+
+
+/*=====  End of common style  ======*/

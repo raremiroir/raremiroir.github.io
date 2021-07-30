@@ -1,0 +1,64 @@
+@media only screen and (max-width: 992px) and  (min-width: 768px){
+	/*===========================================
+	=            naviigation section            =
+	===========================================*/
+	.temp-custom-navigation{
+		.temp-custom-list-items{
+			li{
+				a{
+					@include font-size(12px);
+					padding-left: 6px;
+					padding-right: 6px;
+				}
+			}
+		}
+
+	}
+	/*=====  End of naviigation section  ======*/
+}
+@media only screen and (max-width:768px ){
+	.custom-row{
+		margin:0 ;
+		display: block;
+	}
+
+	/*============================================
+	=            media query for form            =
+	============================================*/
+	.temp-custom-modal-wrap {
+		.temp-custom-modal-content{
+			.temp-custom-modal-body{
+				.temp-login-form-wrapper{
+					margin-top: 15px;
+					.temp-form-column-wrap-image {
+						.temp-form-inner-wrapper{
+							h2 {
+								@include font-size(32px);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.temp-custom-navigation{
+		.temp-custom-logo-header{
+			.navbar-toggle{
+				border: 0 !important;
+				&:hover{
+					background-color: transparent;
+				}
+				&:focus{
+					background-color: transparent;
+				}
+			}
+		}
+		.navbar-collapse{
+			border: 0 !important;
+			box-shadow: none;
+		}
+
+	}
+
+	/*=====  End of media query for form  ======*/
+}

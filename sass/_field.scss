@@ -1,0 +1,205 @@
+
+@import 'mixins';
+@import 'variable';
+
+/*=====================================
+=            input styling            =
+=====================================*/
+.temp-span-wrap {
+	display: inline-block;
+	margin: 9px 0;
+	position: relative;
+	vertical-align: top;
+	width: 100%;
+	z-index: 1;
+	.temp_input_field {
+		border: medium none;
+		@include border-radius(0);
+		color: #000;
+		display: block;
+		float: right;
+		@include font-size(16px);
+		padding-left: 0;
+		position: relative;
+		width: 100%;
+		padding: 0.4em 0.25em;
+		width: 100%;
+		background: transparent;
+		&.temp_textarea_field{
+			height: 100px;
+		}
+		&:focus{
+			outline: none;
+			+ .temp_input_label{
+				.temp_input_label-content{
+					@include translate3d(0, -90%, 0);
+				}
+				&:before{
+					@include translate3d(0, -0.5em, 0);
+				}
+			}
+		}
+	}
+	.temp_input_label {
+		position: absolute;
+		width: 100%;
+		text-align: left;
+		pointer-events: none;
+		-moz-user-select: none;
+		color: #6a7989;
+		display: inline-block;
+		float: right;
+		@include font-size(70.25%);
+		font-weight: bold;
+		&:after{
+			bottom: 0;
+			background: $primary-color;
+			content: "";
+			height: 2px;
+			left: 0;
+			position: absolute;
+			transition: transform 0.3s ease 0s;
+			width: 100%;
+			z-index: -1;
+		}
+		&.temp-textarea-label{
+			&:after{
+				bottom: -60px;
+			}
+		}
+		.temp_input_label-content {
+			color: $secondary-color;
+			display: block;
+			@include font-size(12px);
+			font-weight: 500;
+			padding-bottom: 11px;
+			padding-top: 11px;
+			position: relative;
+			width: 100%;
+			-webkit-transition: -webkit-transform 0.3s;
+			transition: transform 0.3s;
+		}
+	}
+	&.input--filled {
+		.temp_input_label{
+			.temp_input_label-content {
+				@include translate3d(0, -90%, 0);
+			}
+			&:before {
+				@include translate3d(0, -0.5em, 0);
+			}
+		}
+	}
+}
+/*=====  End of input styling  ======*/
+/*========================================
+=            checkbox styling            =
+========================================*/
+.temp-checkbox-wrap{
+	@include font-size(12px);
+	position: relative;
+	margin-left: 15px;
+	color: $primary-color;
+	input{
+		content: "";
+		left: -17px;
+		position: absolute;
+		top: -5px;
+		visibility: hidden;
+		&:checked{
+			~.checkmark{
+				background-color:$secondary-color;
+				&:after{
+					display: block;
+				}
+			}
+		}
+	}
+	.checkmark {
+		background: $primary-color;
+		height: 16px;
+		left: -24px;
+		position: absolute;
+		top: 0px;
+		width: 16px;
+		&:after{
+			border-color: #bababa;
+			border-style: solid;
+			border-width: 0 2px 2px 0;
+			content: "";
+			height: 12px;
+			left: 5px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			@include rotate(45);
+			width: 6px;
+			border-color: #fff;
+			display: none;
+		}
+	}
+}
+/*=====  End of checkbox styling  ======*/
+/*====================================
+=            radio-button            =
+====================================*/
+.temp-custom-radio-button{
+	padding-left: 23px;
+	position: relative;
+	font-family: 16px;
+	input{
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		&:checked{
+			~.temp-radio-checkmark{
+				background-color: $primary-color;
+				&:after{
+					display: block;
+				}
+			}
+		}
+	}
+	.temp-radio-checkmark{
+		background-color:$secondary-color;
+		@include border-radius(50%);
+		height: 18px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 18px;
+		&:after{
+			background: white none repeat scroll 0 0;
+			@include border-radius(50%);
+			content: "";
+			display: none;
+			height: 8px;
+			left: 5px;
+			position: absolute;
+			top: 5px;
+			width: 8px;
+		}
+	}
+}
+/*=====  End of radio-button  ======*/
+ /*==============================
+ =            select            =
+ ==============================*/
+ .temp-custom-select{
+ 	@include appearance(none);
+ 	border: 0 !important;
+ 	box-shadow: none !important;
+ 	border-bottom: 2px solid $primary-color !important;
+ 	@include border-radius(0);
+ 	color: $secondary-color ;
+ 	@include font-size(12px);
+ 	text-align: left !important;
+ 	padding-left: 0 !important;
+ 	position: relative;
+ 	outline: none !important;
+ 	&:focus{
+ 		outline: none !important;
+ 	}
+ }
+ /*=====  End of select  ======*/
+ 

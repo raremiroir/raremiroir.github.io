@@ -1,0 +1,38 @@
+Colors:
+
+DARK BLUE:
+3B4D81
+rgba(59, 77, 129, 1)
+
+ORANGE:
+E46425
+rgba(228, 100, 37, 1)
+
+WHITE: E5E5E5		-	rgba(229, 229, 229, 1)
+
+
+Fonts:
+
+Adrianna Italic
+--------------
+-HTML:
+
+<link rel="stylesheet" href="https://use.typekit.net/uep6btl.css">
+
+-CSS:
+
+font-family: adrianna,sans-serif;
+font-weight: 100;
+font-style: italic;
+
+
+Astloch Bold
+------------
+-HTML:
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Astloch:wght@700&display=swap" rel="stylesheet">
+
+-CSS:
+
+font-family: 'Astloch', cursive;

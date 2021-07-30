@@ -1,0 +1,408 @@
+
+@import 'mixins';
+@import 'variable';
+@import 'button';
+@import 'field';
+@import 'common';
+.temp-popup-form-wrapper {
+	background-image: url("assets/images/banner1.jpg");
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	.temp-content-wrapper {
+		content: "";
+		left: 0;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 50%;
+		@include translate(0,-50%);
+		color: #fff;
+		h1{
+			color: #fff;
+			font-weight: 600;
+			@include font-size(40px);
+			text-shadow:2px 2px 2px #6d6d6d;
+			display: inline-block;
+		}
+		p{
+			@include font-size(20px);
+
+		}
+	}
+
+	 /*================================================
+	 =            style of setting section            =
+	 ================================================*/
+	 
+	 // font-family section style
+	 .temp-change-setting-wrap {
+	 	background-color: #fff;
+	 	color: #000;
+	 	content: "";
+	 	left: -230px;
+	 	position: absolute;
+	 	text-align: left;
+	 	top: 0;
+	 	transition: all 0.3s linear 0s;
+	 	padding-left: 10px;
+	 	padding-bottom: 10px;
+	 	padding-top: 10px;
+	 	width: 230px;
+	 	&.active{
+	 		left: 0 !important;
+	 		transition:0.3s linear all;
+	 	}
+	 	.temp-setting{
+	 		background: #fff none repeat scroll 0 0;
+	 		content: "";
+	 		position: absolute;
+	 		right: -40px;
+	 		top: -1px;
+	 		width: 40px;
+	 		border: 2px solid #992168;
+	 		cursor: pointer;
+	 	}
+	 	.temp-setting-wrapper{
+	 		height: 330px;
+	 		overflow-x: hidden;
+	 		overflow-y: scroll;
+	 		.temp-font-family {
+
+
+	 			.temp-main-font-family-list {
+	 				padding: 0;
+
+	 				.temp-font-menu{
+	 					border: 1px solid #992168;
+	 					cursor: pointer;
+	 					font-weight: 600;
+	 					padding: 10px;
+	 					position: relative;
+	 					#temp-font-menu{
+	 						margin: 0;
+	 					}
+	 					.temp-icon{
+	 						@include font-size(20px);
+	 						position: absolute;
+	 						right: 17px;
+	 						top: 50%;
+	 						transform: translateY(-50%);
+	 					}
+	 					.temp-font-submenu-list{
+	 						background-color: #bc438b;
+	 						display: none;
+	 						font-weight: normal;
+	 						left: 0;
+	 						padding: 0;
+	 						position: absolute;
+	 						top: 41px;
+	 						width: 100%;
+	 						z-index: 9999;
+
+	 						li{
+	 							&:hover{
+	 								background-color: #992168 ; 
+
+	 							}
+	 							&.hide_class{
+	 								display: none;
+	 							}
+	 							a{
+	 								color: #fff;
+	 								padding: 7px;
+	 								display: block;
+	 							}
+	 						}
+	 					}
+	 				}
+	 			}
+	 		}
+	 		// color-change setting style
+	 		.temp-color-setting{
+	 			width: 250px;
+
+	 			input{
+	 				display: inline-block;
+	 			}
+	 			.temp-custom-radio-button {
+	 				display: inline;
+	 			}
+	 			.temp-color-box-wrap{
+	 				display: inline-flex;
+	 				.temp-color-box {
+	 					height: 20px;
+	 					margin: 10px;
+	 					width: 20px;
+	 					&.color1{
+	 						background-color: #2E3353;
+
+	 					}
+	 					&.color2{
+	 						background-color: #889cb7;
+	 					}
+	 					&.color3{
+	 						background-color: #2d5c67;
+	 					}
+	 					&.color4{
+	 						background-color: #75B0C2;
+	 					}
+	 					&.color5{
+	 						background-color: #AB7B39;
+	 					}
+	 					&.color6{
+	 						background-color: #C9BA9D;
+	 					}
+	 				}
+	 			}
+	 		}
+	 		// end
+	 		// background-image setting
+	 		.temp-background-image-setting  {
+	 			.temp-custom-radio-button {
+	 				margin-top: 7px;
+	 				display: inline;
+	 			}
+	 		}
+	 		// end
+	 	}
+
+	 }
+
+
+	 /*=====  End of style of setting section  ======*/
+
+	/*===========================================
+	=            naviigation section            =
+	===========================================*/
+	.temp-custom-navigation{
+		background-color: $primary-color ;
+		border: 0 !important;
+		@include border-radius(0);
+		z-index: 9;
+		.temp-custom-list-items{
+			li{
+				a{
+					color: #fff !important;
+					transition:0.3s linear all;
+					&:hover{
+						background-color: $secondary-color;
+						transition: 0.3s linear all;
+					}
+				}
+			}
+		}
+		.temp-custom-logo-header{
+			a{
+				color: #fff !important;
+				@include font-size(21px);
+				font-weight: bold;
+			}
+		}
+		
+		/*=====  End of naviigation section  ======*/
+	}
+}
+/*====================================
+=            form styling            =
+====================================*/
+.temp-custom-modal-wrap {
+	margin: 5px;
+
+	.temp-custom-modal-content{
+		position: relative;
+		@include border-radius(0);
+		.temp-custom-close-button{
+			background: #fff none repeat scroll 0 0;
+			@include border-radius(50%);
+			@include font-size(21px);
+			height: 22px;
+			opacity: 1;
+			position: absolute;
+			right: -10px;
+			top: -10px;
+			width: 22px;
+			z-index: 9;
+			box-shadow: 2px 2px 4px #000;
+			line-height: 22px;
+		}
+		.temp-custom-modal-body{
+			padding-top:0 !important;
+			padding-bottom: 0 !important;
+			.temp-login-form-wrapper{
+				margin-top: 0px;
+				.temp-form-column-wrap {
+					padding-top: 20px;
+					h2{
+						margin-bottom: 30px;
+						color: $primary-color;
+					}
+					.custom-form-label2{
+						a{
+							@include font-size(12px);
+							color: $primary-color;
+						}
+					}
+					.temp-login-button-wrap{
+						margin-top: 20px;
+						text-align: center;
+						margin-bottom: 20px;
+					}
+					img{
+						margin-bottom: 30px;
+						margin-top: 15px;
+					}
+					.temp-custom-select {
+						margin-bottom: 25px;
+					}
+					// subscribe form section
+					&.temp-subscribe-form-column-wrap{
+						.temp-radio-button-subscribe{
+							color: $primary-color;
+							@include font-size(13px);
+							margin-bottom: 6px;
+							margin-left: 12px !important;
+							margin-top: 6px;
+							padding-left: 10px;
+							display: block;
+							.temp-radio-checkmark{
+								left: -15px;
+							}
+						}
+						.temp-subscribe-checkbox{
+							display: block;
+							font-weight: normal;
+							margin-bottom: 17px;
+							margin-top: 13px;
+						}
+					}
+					// end
+				}
+				.temp-form-column-wrap-image {
+					background-image: url('assets/images/banner1.jpg');
+					padding: 20px;
+					background-size: cover;
+					background-position: center;
+					position: relative;
+					
+					.temp-forget-password-column-wrap-image{
+						h2{
+
+							@include font-size(40px);
+							text-transform: capitalize;
+						}
+					}
+					&:after{
+						background: $primary-color;
+						content: "";
+						height: 100%;
+						left: 0;
+						opacity: 0.86;
+						position: absolute;
+						top: 0;
+						width: 100%;
+					}
+					.temp-form-inner-wrapper{
+						z-index: 99;
+						position: relative;
+						color: #fff;
+						h2{
+							@include font-size(45px);
+							text-transform: capitalize;
+						}
+						p{
+							margin-top: 25px;
+							&.temp-reg-para{
+								margin-top: 45px;
+							}
+						}
+						.temp-anchor-wrap{
+							text-align: center;
+							margin-top: 20px;
+							margin-bottom: 20px;
+							&.temp-reg-anchor-wrap{
+								margin-top: 27px;
+							}
+							.temp-anchor{
+								border: 2px solid #42B0E5;
+								color: #fff;
+								display: block;
+								padding: 8px 20px 8px 0;
+								transition: all 0.3s linear 0s;
+								&:hover{
+									background-color: #47a6db;
+									transition:0.3s linear all;
+								}
+								&:focus{
+									text-decoration: none;
+								}
+								.temp-social-icon-wrap{
+									background: #42b0e5 none repeat scroll 0 0;
+									font-weight: bold;
+									margin-right: 10px;
+									padding: 10px 13px;
+								}
+								span{
+									@include font-size(13px);
+								}
+							}
+							.temp-icon-color {
+								border: 2px solid #c53928;
+								margin-top: 10px;
+								&:hover{
+									background-color:#d24635;
+								}
+								.temp-social-icon-wrap{
+									background-color: #c53928;
+									padding: 10px 12px;
+								}
+							}
+						}
+					}
+
+				}
+
+			}
+		}
+	}
+}
+// color change on click in after
+.changed-one{
+	&:after{
+		background-color: #2E3353 !important;
+	}
+}
+.changed-two{
+	&:after{
+		background-color: #2D5C67 !important;
+	}
+}
+.changed-three{
+	&:after{
+		background-color: #AB7B39 !important;
+	}
+}
+.changed-one-btn{
+	&:before{
+		background-color: #889CB7 !important;
+	}
+}
+.changed-two-btn{
+	&:before{
+		background-color: #75B0C2 !important;
+	}
+}
+.changed-three-btn{
+	&:before{
+		background-color: #C9BA9D !important;
+	}
+}
+
+// end
+
+
+
+
+/*=====  End of form styling  ======*/
+@import 'responsive';
